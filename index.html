@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="./styles.css" ></link>
+    <title>Cheetah Legacy</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="menu">
+                <ul class="menuList">
+                    <li class="menuItem"><a href="#">Hotels</a></li>
+                    <li class="menuItem"><a href="#">Information</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img
+                    class="logoImg" 
+                    src="./assets/Img/logo.png"
+                />
+            </div>
+            <div class="menu">
+                <ul class="menuList">
+                    <li class="menuItem"><a href="#">Contacts</a></li>
+                    <li class="menuItem"><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <div class="bodyWelcome">
+                <h1>JUMEIRAH MESSILAH BEACH HOTEL & SPA OFFER</h1>
+                <h2>Romantic getaway of your dreams</h2>
+                <button
+                    id="openModalBtn"
+                    class="openBtn"
+                >
+                    send request
+                </button>
+            </div>
+
+            <div 
+                class="modalContainer"
+                id="modalContainer"
+            >
+                <div class="modal" id="modal">
+                    <div 
+                        class="errorMsg"
+                        id="errorMsg"
+                    >
+                        <p>Fields length must be more than 2 symbols</p>
+                    </div>
+                    <h1>Lets send request to best vacation this summer</h1>
+                    <div class="forms">
+                        <div class="formOne">
+                            <label for="name">Enter your name</label>
+                            <input
+                                class="input"
+                                id="input"
+                                type="text"
+                                placeholder="John"
+                                minlength="2"
+                            />
+                            <br />
+                            <label for="surnameInput">Enter your surname</label>
+                            <input 
+                                class="input"
+                                id="input"
+                                type="text"
+                                placeholder="Doe"
+                                minlength="2"
+                            />
+                        </div>
+                        <div class="formTwo">
+                            <label for="emailInput">Enter your Email</label>
+                            <input 
+                                class="input"
+                                id="input"
+                                type="email"
+                                placeholder="email@domain.com"
+                                minlength="2"
+                                required
+                            />
+                            <br />
+                            <label for="numberInput">Enter your phone number</label>
+                            <input 
+                                class="input"
+                                id="input"
+                                type="tel"
+                                placeholder="+380"
+                                minlength="2"
+                                required
+                            />
+                        </div>
+
+                        <div
+                            class="formThree"
+                        >
+                            <label for="countrySelect">Select trip country</label>
+                            <select
+                                name="countriesSelect"
+                                class="citySelector"
+                            >
+                                <option class="selectorItem">Egypt</option>
+                                <option class="selectorItem">Turkey</option>
+                                <option class="selectorItem">The Bahamas</option>
+                                <option class="selectorItem">Saudi Arabia</option>
+                                <option class="selectorItem">another</option>
+                            </select>
+                        </div>
+                        <button 
+                            type="submit"
+                            id="closeBtn"
+                            class="modalClose">
+                            Send request
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
